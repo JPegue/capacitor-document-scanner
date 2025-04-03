@@ -65,7 +65,7 @@ https://user-images.githubusercontent.com/26162804/161643203-2a265cc1-5cf1-4474-
 
 ### Limit Number of Scans
 
-You can limit the number of scans. For example if your app lets a user scan a business 
+You can limit the number of scans. For example if your app lets a user scan a business
 card you might want them to only capture the front and back. In this case you can set
 maxNumDocuments to 2. This only works on Android.
 
@@ -92,7 +92,7 @@ https://user-images.githubusercontent.com/26162804/161643345-6fe15f33-9414-46f5-
 
 ### Remove Cropper
 
-You can automatically accept the detected document corners, and prevent the user from 
+You can automatically accept the detected document corners, and prevent the user from
 making adjustments. Set letUserAdjustCrop to false to skip the crop screen. This limits
 the max number of scans to 1. This only works on Android.
 
@@ -195,6 +195,14 @@ Opens the camera, and starts the document scan
 | **`ImageFilePath`** | <code>'imageFilePath'</code> | Use this response type if you want document scan returned as inmage file paths. |
 
 </docgen-api>
+
+## Packaging for Local Distribution
+
+If you need to distribute the plugin without using the npm registry, you can create a tarball package using the `npm pack` command:
+
+```bash
+npm pack
+```
 
 ## License
 
